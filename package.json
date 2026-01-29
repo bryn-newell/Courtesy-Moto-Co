@@ -1,0 +1,20 @@
+{
+  "name": "Courtesy-Moto-Co",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently 'sass --watch styles:_site/css' 'npx @11ty/eleventy --serve'",
+    "build": "sass styles:_site/css && npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "Bryn Newell",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "concurrently": "^9.1.0",
+    "sass": "^1.83.4"
+  }
+}
