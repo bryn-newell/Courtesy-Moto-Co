@@ -2,13 +2,22 @@
 
 .header {
   background-color: $linen;
-  height: 90vh;
+  min-height: 90vh;
 
   &-banner {
     padding: 12px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $dark-brown;
+    align-items: center;
+  }
+
+  .logo {
+    width: 145px;
+  }
+
+  .est {
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   }
 
   &-main {
@@ -19,7 +28,6 @@
   }
 
   &-content {
-    // align-self: center;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -30,11 +38,13 @@
 
   .coming-soon {
     text-transform: uppercase;
+    margin-bottom: -12px;
   }
 
   hr {
     width: 100px;
     margin-left: 0;
+    color: $dark-brown;
   }
 
   .button-row {
@@ -42,6 +52,12 @@
     gap: 12px;
   }
 
+  .hero-image {
+    background-image: url('/assets/garage.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 
@@ -52,7 +68,7 @@
   .opening-content {
     display: flex;
     gap: 24px;
-    margin-top: 48px;
+    margin-top: 72px;
     justify-content: space-between;
   }
 
@@ -60,25 +76,30 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    h4 {
+      margin-block: 12px;
+    }
   }
 }
 
 
 .vision {
   .value-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(3, minmax(216px, max-content));
+    gap: 48px;
     margin-top: 48px;
   }
 
-  .key-value{
+  .key-value {
     padding: 24px;
     border-radius: 4px;
     background-color: $courtesy-red;
     color: #FFF;
     text-align: center;
-    max-width: 216px;
+    width: 216px;
   }
 }
 
@@ -98,10 +119,21 @@
 }
 
 .footer {
+  align-items: center;
   background-color: $dark-brown;
   color: $linen;
-  padding-block: 120px;
-  padding-inline: 48px;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+
+  .icon {
+    fill: $linen;
+  }
+
+  .text-sm {
+    font-size: $step--1;
+  }
+  
 }
 
 
@@ -128,3 +160,8 @@
   background-color: $brown;
   color: $dark-brown;
 }
+
+  .icon {
+    width: 32px;
+    fill: $courtesy-red;
+  }
