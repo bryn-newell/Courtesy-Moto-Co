@@ -17,7 +17,7 @@
   }
 
   .est {
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   }
 
   &-main {
@@ -49,6 +49,7 @@
 
   .button-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
   }
 
@@ -57,6 +58,28 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    &-main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &-content {
+      order: 2;
+      padding-top: 48px;
+    }
+
+    .hero-image {
+      order: 1;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    &-main {
+      grid-template-rows: 25vh 1fr;
+    }
   }
 }
 
@@ -81,6 +104,13 @@
       margin-block: 12px;
     }
   }
+
+  @media (max-width: $breakpoint-sm) {
+    .opening-content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 }
 
 
@@ -88,7 +118,6 @@
   .value-grid {
     display: flex;
     flex-wrap: wrap;
-    // grid-template-columns: repeat(3, minmax(216px, max-content));
     gap: 48px;
     margin-top: 48px;
   }
@@ -101,6 +130,14 @@
     text-align: center;
     width: 216px;
   }
+
+
+  @media (max-width: $breakpoint-sm) {
+    text-align: center;
+    .value-grid {
+      justify-content: center;
+    }
+  }
 }
 
 .support {
@@ -112,6 +149,7 @@
 
   .button-row {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 48px;
     gap: 12px;
   }
@@ -125,6 +163,8 @@
   padding: 48px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
 
   .icon {
     fill: $linen;
@@ -133,7 +173,17 @@
   .text-sm {
     font-size: $step--1;
   }
-  
+
+  .icon-section {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    .icon {
+      width: 24px;
+    }
+  }
 }
 
 
@@ -161,7 +211,7 @@
   color: $dark-brown;
 }
 
-  .icon {
-    width: 32px;
-    fill: $courtesy-red;
-  }
+.icon {
+  width: 32px;
+  fill: $courtesy-red;
+}
