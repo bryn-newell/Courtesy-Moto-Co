@@ -1,5 +1,130 @@
 @use 'variables' as *;
 
 .header {
-  background-color: $yellow-dark;
+  background-color: $linen;
+  height: 90vh;
+
+  &-banner {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $dark-brown;
+  }
+
+  &-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+
+  &-content {
+    // align-self: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px;
+    padding-top: 120px;
+  }
+
+  .coming-soon {
+    text-transform: uppercase;
+  }
+
+  hr {
+    width: 100px;
+    margin-left: 0;
+  }
+
+  .button-row {
+    display: flex;
+    gap: 12px;
+  }
+
+}
+
+
+.opening-soon {
+  background-color: $linen;
+  text-align: center;
+
+  .opening-content {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+    justify-content: space-between;
+  }
+
+  .info-collection {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.vision {
+  .value-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .key-value{
+    padding: 24px;
+    border-radius: 4px;
+    background-color: $courtesy-red;
+    color: #FFF;
+    text-align: center;
+    max-width: 216px;
+  }
+}
+
+.support {
+  background-color: $linen;
+
+  h3 {
+    margin-bottom: 24px;
+  }
+
+  .button-row {
+    display: flex;
+    margin-top: 48px;
+    gap: 12px;
+  }
+
+}
+
+.footer {
+  background-color: $dark-brown;
+  color: $linen;
+  padding-block: 120px;
+  padding-inline: 48px;
+}
+
+
+// Global
+.section {
+  margin-inline: auto;
+  padding-inline: 48px;
+  padding-block: 120px;
+}
+
+.button {
+  padding-block: 12px;
+  padding-inline: 24px;
+  border-radius: 4px;
+  background-color: $courtesy-red;
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+.button.secondary {
+  background-color: $brown;
+  color: $dark-brown;
 }

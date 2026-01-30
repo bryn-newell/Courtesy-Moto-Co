@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+// @font-face {
+//   font-family: 'le murmure';
+//   font-display: swap;
+//   src: url('/assets/fonts/Le_Murmure.woff2') format('woff2');
+// }
+
+// @font-face {
+//   font-family: 'le murmure numbers';
+//   font-display: swap;
+//   src: url('/assets/fonts/subset-LeMurmure-Regular.woff2') format('woff2');
+// }
+
+body {
+  font-size: $step-0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+  color: $dark-brown;
+}
+
+h1 {
+  // font-family: 'le murmure';
+  font-size: $step-7;
+}
+
+h2 {
+  font-size: $step-5;
+}
+
+h3 {
+  font-size: $step-4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
