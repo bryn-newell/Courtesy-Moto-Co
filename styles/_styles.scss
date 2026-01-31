@@ -106,15 +106,17 @@
 
   @media (max-width: $breakpoint-sm) {
     .opening-content {
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      gap: 36px;
+      h4 {
+        margin-block: 4px;
+      }
     }
   }
 }
 
 
 .vision {
-
   &-content {
     align-items: center;
     display: flex;

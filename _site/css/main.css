@@ -165,8 +165,11 @@ textarea:not([rows]) {
 }
 @media (max-width: 576px) {
   .opening-soon .opening-content {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .opening-soon .opening-content h4 {
+    margin-block: 4px;
   }
 }
 
