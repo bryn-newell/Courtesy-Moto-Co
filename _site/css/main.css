@@ -170,11 +170,18 @@ textarea:not([rows]) {
   }
 }
 
+.vision-content {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+}
+.vision .image {
+  max-width: 900px;
+}
 .vision .value-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  margin-top: 48px;
 }
 .vision .key-value {
   padding: 24px;
@@ -183,6 +190,11 @@ textarea:not([rows]) {
   color: #FFF;
   text-align: center;
   width: 216px;
+}
+@media (max-width: 992px) {
+  .vision-content {
+    flex-direction: column;
+  }
 }
 @media (max-width: 576px) {
   .vision {
