@@ -108,6 +108,7 @@
     .opening-content {
       flex-direction: column;
       gap: 36px;
+
       h4 {
         margin-block: 4px;
       }
@@ -122,14 +123,17 @@
     display: flex;
     gap: 24px;
   }
+
   .image {
     max-width: 900px;
   }
+
   .value-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 48px;
   }
+
   .key-value {
     padding: 24px;
     border-radius: 4px;
@@ -138,14 +142,14 @@
     text-align: center;
     width: 216px;
   }
-    @media (max-width: $breakpoint-lg) {
-      &-content {
-        flex-direction: column;
-      }
+
+  @media (max-width: $breakpoint-lg) {
+    text-align: center;
+
+    &-content {
+      flex-direction: column;
     }
 
-  @media (max-width: $breakpoint-sm) {
-    text-align: center;
     .value-grid {
       justify-content: center;
     }

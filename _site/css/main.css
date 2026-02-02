@@ -195,13 +195,11 @@ textarea:not([rows]) {
   width: 216px;
 }
 @media (max-width: 992px) {
-  .vision-content {
-    flex-direction: column;
-  }
-}
-@media (max-width: 576px) {
   .vision {
     text-align: center;
+  }
+  .vision-content {
+    flex-direction: column;
   }
   .vision .value-grid {
     justify-content: center;
