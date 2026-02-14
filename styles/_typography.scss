@@ -4,7 +4,7 @@ body {
   font-size: $step-0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+  font-family: $sans-serif-font;
   color: $dark-brown;
 }
 
@@ -25,5 +25,5 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: $serif-font;
 }

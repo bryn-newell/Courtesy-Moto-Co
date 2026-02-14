@@ -86,6 +86,20 @@ textarea:not([rows]) {
   border-bottom: 1px solid #221812;
   align-items: center;
 }
+.header-row {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+}
+.header-row .phone-link {
+  display: flex;
+  gap: 4px;
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  line-height: 100%;
+}
+.header-row .phone-link .icon {
+  width: 24px;
+}
 .header .logo {
   width: 145px;
 }
@@ -215,7 +229,7 @@ textarea:not([rows]) {
 .support .button-row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 48px;
+  margin-block: 48px;
   gap: 12px;
 }
 
@@ -268,9 +282,24 @@ textarea:not([rows]) {
   color: #221812;
 }
 
+.link {
+  color: #710d1b;
+  font-weight: 600;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
 .icon {
   width: 32px;
   fill: #710d1b;
+}
+
+@media (max-width: 576px) {
+  .mobile-hidden {
+    display: none;
+  }
 }
 
 body {

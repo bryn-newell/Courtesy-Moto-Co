@@ -11,6 +11,24 @@
     align-items: center;
   }
 
+  &-row {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+
+    .phone-link {
+      display: flex;
+      gap: 4px;
+      font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      line-height: 100%;
+
+      .icon {
+        width: 24px;
+      }
+    }
+
+  }
+
   .logo {
     width: 145px;
   }
@@ -166,7 +184,7 @@
   .button-row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 48px;
+    margin-block: 48px;
     gap: 12px;
   }
 
@@ -227,7 +245,23 @@
   color: $dark-brown;
 }
 
+.link {
+  color: $courtesy-red;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .icon {
   width: 32px;
   fill: $courtesy-red;
+}
+
+.mobile-hidden {
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
