@@ -102,15 +102,71 @@
 }
 
 
+.open-house {
+  background-color: #000;
+  color: $linen;
+
+  .open-house-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .open-house-label {
+    font-size: $step--1;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: $courtesy-light-gold;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    background: $gold-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+
+  .open-house-date {
+    color: $courtesy-light-gold;
+    font-size: $step-0;
+  }
+
+  .open-house-fliers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin-inline: auto;
+
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      max-width: 560px;
+    }
+  }
+
+  .flier {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgba($courtesy-gold, 0.35);
+    box-shadow: 0 8px 32px rgba($courtesy-gold, 0.15);
+  }
+}
+
+
 .opening-soon {
   background-color: $linen;
   text-align: center;
 
   .opening-content {
     display: flex;
-    gap: 24px;
+    gap: 64px;
     margin-top: 72px;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 760px;
+    margin-inline: auto;
   }
 
   .info-collection {

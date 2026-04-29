@@ -166,15 +166,65 @@ textarea:not([rows]) {
   }
 }
 
+.open-house {
+  background-color: #000;
+  color: #f9f0e7;
+}
+.open-house .open-house-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.open-house .open-house-label {
+  font-size: clamp(0.8333rem, 0.7652rem + 0.303vw, 1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #c7ad7a;
+  margin-bottom: 8px;
+}
+.open-house h2 {
+  background: linear-gradient(135deg, #a27e2d 0%, #c7ad7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+.open-house .open-house-date {
+  color: #c7ad7a;
+  font-size: clamp(1rem, 0.8977rem + 0.4545vw, 1.25rem);
+}
+.open-house .open-house-fliers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+@media (max-width: 768px) {
+  .open-house .open-house-fliers {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 560px;
+  }
+}
+.open-house .flier {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid rgba(162, 126, 45, 0.35);
+  box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
+}
+
 .opening-soon {
   background-color: #f9f0e7;
   text-align: center;
 }
 .opening-soon .opening-content {
   display: flex;
-  gap: 24px;
+  gap: 64px;
   margin-top: 72px;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 760px;
+  margin-inline: auto;
 }
 .opening-soon .info-collection {
   align-items: center;
