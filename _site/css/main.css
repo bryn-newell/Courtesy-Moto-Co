@@ -76,6 +76,12 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .header {
   background-color: #f9f0e7;
 }
@@ -135,7 +141,7 @@ textarea:not([rows]) {
   gap: 12px;
 }
 .header .hero-image {
-  background-image: url("/assets/garage.jpg");
+  background-image: url("/assets/courtesy-garage.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,9 +331,11 @@ h3 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+button,
+.button {
   font-weight: normal;
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

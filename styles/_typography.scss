@@ -4,7 +4,7 @@ body {
   font-size: $step-0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $sans-serif-font;
+  font-family: $body-font;
   color: $dark-brown;
 }
 
@@ -23,7 +23,9 @@ h3 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+button,
+.button {
   font-weight: normal;
-  font-family: $serif-font;
+  font-family: $heading-font;
 }
