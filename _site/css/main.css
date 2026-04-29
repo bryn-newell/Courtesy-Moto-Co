@@ -89,7 +89,7 @@ textarea:not([rows]) {
   padding: 12px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #221812;
+  border-bottom: 1px solid #a27e2d;
   align-items: center;
 }
 .header-row {
@@ -133,7 +133,8 @@ textarea:not([rows]) {
 .header hr {
   width: 100px;
   margin-left: 0;
-  color: #221812;
+  color: #a27e2d;
+  border-color: #a27e2d;
 }
 .header .button-row {
   display: flex;
@@ -209,8 +210,8 @@ textarea:not([rows]) {
 .vision .key-value {
   padding: 24px;
   border-radius: 4px;
-  background-color: #710d1b;
-  color: #FFF;
+  background: linear-gradient(135deg, #a27e2d 0%, #c7ad7a 100%);
+  color: #000;
   text-align: center;
   width: 216px;
 }
@@ -241,7 +242,7 @@ textarea:not([rows]) {
 
 .footer {
   align-items: center;
-  background-color: #221812;
+  background-color: #000;
   color: #f9f0e7;
   padding: 48px;
   display: flex;
@@ -275,31 +276,44 @@ textarea:not([rows]) {
   padding-block: 12px;
   padding-inline: 24px;
   border-radius: 4px;
-  background-color: #710d1b;
-  color: #FFF;
+  background: linear-gradient(135deg, #a27e2d 0%, #c7ad7a 100%);
+  color: #000;
   text-decoration: none;
   display: inline-block;
   font-weight: 500;
   text-wrap: nowrap;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+.button:hover {
+  opacity: 0.85;
 }
 
 .button.secondary {
-  background-color: #a67e2d;
-  color: #221812;
+  background: transparent;
+  color: #000;
+  border: 2px solid #a27e2d;
+  padding-block: 10px;
+  padding-inline: 22px;
+}
+.button.secondary:hover {
+  background: linear-gradient(135deg, #a27e2d 0%, #c7ad7a 100%);
+  opacity: 1;
 }
 
 .link {
-  color: #710d1b;
+  color: #000;
   font-weight: 600;
   text-decoration: none;
 }
 .link:hover {
+  color: #a27e2d;
   text-decoration: underline;
 }
 
 .icon {
   width: 32px;
-  fill: #710d1b;
+  fill: #a27e2d;
 }
 
 @media (max-width: 576px) {
@@ -313,7 +327,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
-  color: #221812;
+  color: #000;
 }
 
 h1 {

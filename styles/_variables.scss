@@ -8,6 +8,8 @@ $courtesy-light-gold: #c7ad7a;
 $courtesy-gold: #a27e2d;
 $courtesy-grey: #181818;
 
+$gold-gradient: linear-gradient(135deg, $courtesy-gold 0%, $courtesy-light-gold 100%);
+
 // typography
 $step--1: clamp(0.8333rem, 0.7652rem + 0.303vw, 1rem);
 $step-0: clamp(1rem, 0.8977rem + 0.4545vw, 1.25rem);

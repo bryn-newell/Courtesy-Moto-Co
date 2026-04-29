@@ -7,7 +7,7 @@
     padding: 12px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $dark-brown;
+    border-bottom: 1px solid $courtesy-gold;
     align-items: center;
   }
 
@@ -61,7 +61,8 @@
   hr {
     width: 100px;
     margin-left: 0;
-    color: $dark-brown;
+    color: $courtesy-gold;
+    border-color: $courtesy-gold;
   }
 
   .button-row {
@@ -155,8 +156,8 @@
   .key-value {
     padding: 24px;
     border-radius: 4px;
-    background-color: $courtesy-red;
-    color: #FFF;
+    background: $gold-gradient;
+    color: #000;
     text-align: center;
     width: 216px;
   }
@@ -192,7 +193,7 @@
 
 .footer {
   align-items: center;
-  background-color: $dark-brown;
+  background-color: #000;
   color: $linen;
   padding: 48px;
   display: flex;
@@ -232,32 +233,47 @@
   padding-block: 12px;
   padding-inline: 24px;
   border-radius: 4px;
-  background-color: $courtesy-red;
-  color: #FFF;
+  background: $gold-gradient;
+  color: #000;
   text-decoration: none;
   display: inline-block;
   font-weight: 500;
   text-wrap: nowrap;
+  border: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }
 
 .button.secondary {
-  background-color: $brown;
-  color: $dark-brown;
+  background: transparent;
+  color: #000;
+  border: 2px solid $courtesy-gold;
+  padding-block: 10px;
+  padding-inline: 22px;
+
+  &:hover {
+    background: $gold-gradient;
+    opacity: 1;
+  }
 }
 
 .link {
-  color: $courtesy-red;
+  color: #000;
   font-weight: 600;
   text-decoration: none;
 
   &:hover {
+    color: $courtesy-gold;
     text-decoration: underline;
   }
 }
 
 .icon {
   width: 32px;
-  fill: $courtesy-red;
+  fill: $courtesy-gold;
 }
 
 .mobile-hidden {
