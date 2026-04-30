@@ -77,7 +77,7 @@ textarea:not([rows]) {
 }
 
 .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -100,7 +100,18 @@ textarea:not([rows]) {
 .header-row .phone-link {
   display: flex;
   gap: 4px;
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family:
+    Iowan Old Style,
+    Apple Garamond,
+    Baskerville,
+    Times New Roman,
+    Droid Serif,
+    Times,
+    Source Serif Pro,
+    serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
   line-height: 100%;
 }
 .header-row .phone-link .icon {
@@ -110,7 +121,18 @@ textarea:not([rows]) {
   width: 145px;
 }
 .header .est {
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family:
+    Iowan Old Style,
+    Apple Garamond,
+    Baskerville,
+    Times New Roman,
+    Droid Serif,
+    Times,
+    Source Serif Pro,
+    serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
 }
 .header-main {
   display: grid;
@@ -142,7 +164,7 @@ textarea:not([rows]) {
   gap: 12px;
 }
 .header .hero-image {
-  background-image: url("/assets/courtesy-garage.jpg");
+  background-image: url('/assets/courtesy-garage.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,7 +398,21 @@ body {
   font-size: clamp(1rem, 0.8977rem + 0.4545vw, 1.25rem);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    Adwaita Sans,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    helvetica,
+    arial,
+    sans-serif;
   color: #000;
 }
 
@@ -399,7 +435,7 @@ h4,
 button,
 .button {
   font-weight: normal;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
