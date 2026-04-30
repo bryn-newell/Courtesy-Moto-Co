@@ -95,12 +95,13 @@ textarea:not([rows]) {
 .header-row {
   align-items: center;
   display: flex;
+  font-family: "Bebas Neue", sans-serif;
   gap: 24px;
 }
 .header-row .phone-link {
+  align-items: center;
   display: flex;
-  gap: 4px;
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  gap: 6px;
   line-height: 100%;
 }
 .header-row .phone-link .icon {
@@ -108,9 +109,6 @@ textarea:not([rows]) {
 }
 .header .logo {
   width: 145px;
-}
-.header .est {
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 .header-main {
   display: grid;
@@ -142,7 +140,7 @@ textarea:not([rows]) {
   gap: 12px;
 }
 .header .hero-image {
-  background-image: url("/assets/courtesy-garage.jpg");
+  background-image: url("../assets/courtesy-garage.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -260,8 +258,8 @@ textarea:not([rows]) {
 .vision .key-value {
   padding: 24px;
   border-radius: 4px;
-  background: linear-gradient(135deg, #a27e2d 0%, #c7ad7a 100%);
-  color: #000;
+  background: linear-gradient(135deg, #000 0%, #181818 100%);
+  color: #FFF;
   text-align: center;
   width: 216px;
 }
@@ -340,9 +338,8 @@ textarea:not([rows]) {
 }
 
 .button.secondary {
-  background: transparent;
-  color: #000;
-  border: 2px solid #a27e2d;
+  background: #000;
+  color: #FFF;
   padding-block: 10px;
   padding-inline: 22px;
 }

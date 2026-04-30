@@ -1,4 +1,5 @@
 // colors
+$black: #000;
 $brown: #a67e2d;
 $dark-brown: #221812;
 $yellow-dark: #ffecb5;
@@ -9,6 +10,8 @@ $courtesy-gold: #a27e2d;
 $courtesy-grey: #181818;
 
 $gold-gradient: linear-gradient(135deg, $courtesy-gold 0%, $courtesy-light-gold 100%);
+$black-gradient: linear-gradient(135deg, $black 0%, $courtesy-grey 100%);
+
 
 // typography
 $step--1: clamp(0.8333rem, 0.7652rem + 0.303vw, 1rem);

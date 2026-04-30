@@ -14,12 +14,13 @@
   &-row {
     align-items: center;
     display: flex;
+    font-family: $heading-font;
     gap: 24px;
 
     .phone-link {
+      align-items: center;
       display: flex;
-      gap: 4px;
-      font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      gap: 6px;
       line-height: 100%;
 
       .icon {
@@ -31,10 +32,6 @@
 
   .logo {
     width: 145px;
-  }
-
-  .est {
-    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   }
 
   &-main {
@@ -72,7 +69,7 @@
   }
 
   .hero-image {
-    background-image: url('/assets/courtesy-garage.jpg');
+    background-image: url('../assets/courtesy-garage.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,8 +209,8 @@
   .key-value {
     padding: 24px;
     border-radius: 4px;
-    background: $gold-gradient;
-    color: #000;
+    background: $black-gradient;
+    color: #FFF;
     text-align: center;
     width: 216px;
   }
@@ -304,9 +301,8 @@
 }
 
 .button.secondary {
-  background: transparent;
-  color: #000;
-  border: 2px solid $courtesy-gold;
+  background: #000;
+  color: #FFF;
   padding-block: 10px;
   padding-inline: 22px;
 
