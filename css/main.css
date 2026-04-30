@@ -164,7 +164,7 @@ textarea:not([rows]) {
   gap: 12px;
 }
 .header .hero-image {
-  background-image: url('/assets/courtesy-garage.jpg');
+  background-image: url('../assets/courtesy-garage.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
