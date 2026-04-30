@@ -4,7 +4,8 @@
   background-color: $linen;
 
   &-banner {
-    padding: 12px;
+    padding-block: 12px;
+    padding-inline: max(12px, calc((100% - 1400px) / 2));
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $courtesy-gold;
@@ -39,6 +40,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     height: 100%;
+    max-width: 1424px;
+    margin-inline: auto;
   }
 
   &-content {
@@ -248,7 +251,8 @@
   align-items: center;
   background-color: #000;
   color: $linen;
-  padding: 48px;
+  padding-block: 48px;
+  padding-inline: max(48px, calc((100% - 1400px) / 2));
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -277,8 +281,7 @@
 
 // Global
 .section {
-  margin-inline: auto;
-  padding-inline: 48px;
+  padding-inline: max(48px, calc((100% - 1400px) / 2));
   padding-block: 120px;
 }
 

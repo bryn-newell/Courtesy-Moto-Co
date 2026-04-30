@@ -86,7 +86,8 @@ textarea:not([rows]) {
   background-color: #f9f0e7;
 }
 .header-banner {
-  padding: 12px;
+  padding-block: 12px;
+  padding-inline: max(12px, (100% - 1400px) / 2);
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #a27e2d;
@@ -115,6 +116,8 @@ textarea:not([rows]) {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   height: 100%;
+  max-width: 1424px;
+  margin-inline: auto;
 }
 .header-content {
   align-items: flex-start;
@@ -292,7 +295,8 @@ textarea:not([rows]) {
   align-items: center;
   background-color: #000;
   color: #f9f0e7;
-  padding: 48px;
+  padding-block: 48px;
+  padding-inline: max(48px, (100% - 1400px) / 2);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -315,8 +319,7 @@ textarea:not([rows]) {
 }
 
 .section {
-  margin-inline: auto;
-  padding-inline: 48px;
+  padding-inline: max(48px, (100% - 1400px) / 2);
   padding-block: 120px;
 }
 
