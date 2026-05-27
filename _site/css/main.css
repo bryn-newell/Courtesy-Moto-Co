@@ -215,11 +215,11 @@ textarea:not([rows]) {
   box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
 }
 
-.opening-soon {
+.find-us {
   background-color: #f9f0e7;
   text-align: center;
 }
-.opening-soon .opening-content {
+.find-us .opening-content {
   display: flex;
   gap: 64px;
   margin-top: 72px;
@@ -227,20 +227,20 @@ textarea:not([rows]) {
   max-width: 760px;
   margin-inline: auto;
 }
-.opening-soon .info-collection {
+.find-us .info-collection {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.opening-soon .info-collection h4 {
+.find-us .info-collection h4 {
   margin-block: 12px;
 }
 @media (max-width: 576px) {
-  .opening-soon .opening-content {
+  .find-us .opening-content {
     flex-direction: column;
     gap: 36px;
   }
-  .opening-soon .opening-content h4 {
+  .find-us .opening-content h4 {
     margin-block: 4px;
   }
 }
