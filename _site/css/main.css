@@ -175,21 +175,10 @@ textarea:not([rows]) {
   text-align: center;
   margin-bottom: 56px;
 }
-.open-house .open-house-label {
-  font-size: clamp(0.8333rem, 0.7652rem + 0.303vw, 1rem);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #c7ad7a;
-  margin-bottom: 8px;
-}
 .open-house h2 {
   color: #a27e2d;
   background-clip: text;
   margin-bottom: 16px;
-}
-.open-house .open-house-date {
-  color: #c7ad7a;
-  font-size: clamp(1rem, 0.8977rem + 0.4545vw, 1.25rem);
 }
 .open-house .open-house-fliers {
   display: grid;
