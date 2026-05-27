@@ -172,13 +172,27 @@ textarea:not([rows]) {
   color: #f9f0e7;
 }
 .open-house .open-house-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin-bottom: 56px;
+}
+.open-house .image {
+  max-width: 1000px;
+  margin-inline: auto;
   margin-bottom: 56px;
 }
 .open-house h2 {
   color: #a27e2d;
   background-clip: text;
   margin-bottom: 16px;
+}
+.open-house p {
+  font-size: clamp(1.2rem, 1.0517rem + 0.6591vw, 1.5625rem);
+  color: #c7ad7a;
+  margin-bottom: 56px;
+  max-width: 60ch;
 }
 .open-house .open-house-fliers {
   display: grid;
@@ -197,7 +211,6 @@ textarea:not([rows]) {
 .open-house .flier {
   width: 100%;
   display: block;
-  border-radius: 4px;
   border: 1px solid rgba(162, 126, 45, 0.35);
   box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
 }
@@ -246,12 +259,6 @@ textarea:not([rows]) {
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: center;
-}
-.vision .image img {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid rgba(162, 126, 45, 0.35);
-  box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
 }
 .vision .value-grid {
   display: grid;
@@ -367,6 +374,13 @@ textarea:not([rows]) {
 .icon {
   width: 32px;
   fill: #a27e2d;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(162, 126, 45, 0.35);
+  box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
 }
 
 @media (max-width: 576px) {

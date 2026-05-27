@@ -107,7 +107,16 @@
   color: $linen;
 
   .open-house-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .image {
+    max-width: 1000px;
+    margin-inline: auto;
     margin-bottom: 56px;
   }
 
@@ -115,6 +124,13 @@
     color: $courtesy-gold;
     background-clip: text;
     margin-bottom: 16px;
+  }
+
+  p {
+    font-size: $step-1;
+    color: $courtesy-light-gold;
+    margin-bottom: 56px;
+    max-width: 60ch;
   }
 
 
@@ -135,7 +151,6 @@
   .flier {
     width: 100%;
     display: block;
-    border-radius: 4px;
     border: 1px solid rgba($courtesy-gold, 0.35);
     box-shadow: 0 8px 32px rgba($courtesy-gold, 0.15);
   }
@@ -193,13 +208,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 64px;
     align-items: center;
-  }
-
-  .image img {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid rgba($courtesy-gold, 0.35);
-    box-shadow: 0 8px 32px rgba($courtesy-gold, 0.15);
   }
 
   .value-grid {
@@ -333,6 +341,13 @@
 .icon {
   width: 32px;
   fill: $courtesy-gold;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba($courtesy-gold, 0.35);
+  box-shadow: 0 8px 32px rgba($courtesy-gold, 0.15);
 }
 
 .mobile-hidden {
