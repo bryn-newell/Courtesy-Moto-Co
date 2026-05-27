@@ -217,6 +217,14 @@ textarea:not([rows]) {
   border: 1px solid rgba(162, 126, 45, 0.35);
   box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
 }
+.open-house iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 800px;
+  border-radius: 4px;
+  border: 1px solid rgba(162, 126, 45, 0.35);
+  box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
+}
 
 .find-us {
   background-color: #f9f0e7;
@@ -422,5 +430,3 @@ button,
   font-weight: normal;
   font-family: "Bebas Neue", sans-serif;
 }
-
-/*# sourceMappingURL=main.css.map */

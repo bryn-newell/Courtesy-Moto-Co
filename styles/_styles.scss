@@ -158,6 +158,15 @@
     border: 1px solid rgba($courtesy-gold, 0.35);
     box-shadow: 0 8px 32px rgba($courtesy-gold, 0.15);
   }
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-width: 800px;
+    border-radius: 4px;
+    border: 1px solid rgba($courtesy-gold, 0.35);
+    box-shadow: 0 8px 32px rgba($courtesy-gold, 0.15);
+  }
 }
 
 
