@@ -181,6 +181,9 @@ textarea:not([rows]) {
 .open-house .image {
   max-width: 1000px;
   margin-inline: auto;
+}
+.open-house .photo-credit {
+  font-size: clamp(0.8333rem, 0.7652rem + 0.303vw, 1rem);
   margin-bottom: 56px;
 }
 .open-house h2 {
@@ -221,6 +224,7 @@ textarea:not([rows]) {
 }
 .find-us .opening-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 64px;
   margin-top: 72px;
   justify-content: center;
