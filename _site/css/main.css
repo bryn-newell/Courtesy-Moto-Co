@@ -206,18 +206,40 @@ textarea:not([rows]) {
   box-shadow: 0 8px 32px rgba(162, 126, 45, 0.15);
   margin-bottom: 56px;
 }
+.open-house .photo-grid {
+  columns: 3;
+  column-gap: 12px;
+  margin-top: 48px;
+  width: 100%;
+}
+.open-house .photo-grid img {
+  width: 100%;
+  display: block;
+  break-inside: avoid;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .open-house .photo-grid {
+    columns: 2;
+  }
+}
+@media (max-width: 576px) {
+  .open-house .photo-grid {
+    columns: 1;
+  }
+}
 
 .find-us {
   background-color: #f9f0e7;
   text-align: center;
 }
 .find-us .opening-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 64px;
-  margin-top: 72px;
-  justify-content: center;
-  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 56px;
+  max-width: 800px;
   margin-inline: auto;
 }
 .find-us .info-collection {
@@ -230,7 +252,7 @@ textarea:not([rows]) {
 }
 @media (max-width: 576px) {
   .find-us .opening-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 36px;
   }
   .find-us .opening-content h4 {
@@ -411,5 +433,3 @@ button,
   font-weight: normal;
   font-family: "Bebas Neue", sans-serif;
 }
-
-/*# sourceMappingURL=main.css.map */
